@@ -1,0 +1,441 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+
+
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n){
+    background-color: lightgrey;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+/*skills section*/
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 5px;
+    margin-right: 0.5rem;
+}
+.skills-display{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-bottom: 32px;
+}
+.skill-progress{
+    width: 12rem;
+    height: 2.5rem;
+    background-color: grey;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 25px;
+    box-shadow: 1px 1px 2px 1px grey inset;
+}
+.mb-blue{
+    background-color: blue;
+}
+.mb-red{
+    background-color: red;
+}
+.mb-purple{
+    background-color: purple;
+}
+.mb-green{
+    background-color: green;
+}
+/*percentage classes*/
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit; 
+}
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 3px gre60
+}
+
+/*portfolio-section*/
+.portfolio-display{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-name{
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 25px;
+    box-shadow: 1px 1px 2px 1px grey;
+    position: relative;
+    
+}
+
+.portfolio-name img {
+  width: 100%;
+  height: auto;
+}
+
+
+.portfolio-details {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: transparent;
+  text-align: center;
+  padding: 10px;
+}
+
+.portfolio-name:hover {
+  box-shadow: 0 0 20px #74adc8;
+}
+
+.portfolio-name:hover .portfolio-details {
+  background-color: #80808078;
+  color: white;
+}
+.portfolio-details p{
+    font-size: 1.2rem;
+}
+
+/*contact section*/
+
+#contact{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, blue, purple);
+}
+
+#contact h1 span{
+    color: white;
+}
+
+.contact-section{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.message{
+    width: 40%;
+    height: auto;
+}
+
+.address{
+    width: 40%;
+    height: auto;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.message form div input{
+    width: 300px;
+    background: transparent;
+    border: transparent;
+    border-bottom: 2px white solid;
+    color: white;
+}
+.message form div{
+    line-height: 1.6;
+}
+.message textarea{
+    background: transparent;
+    border: transparent;
+    border-bottom: 2px white solid;
+    color: white;
+    margin-top: 20px;
+}
+.message div button{
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 2px white solid;
+    font-weight: 700;
+    color: white;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.address span{
+    display: inline-block;
+    font-size: 0.7rem;
+
+}
+
+.address div{
+    margin-bottom: 15px;
+}
+
+/*work experience*/
+.timeline{
+    position: relative;
+    width: 75%;
+}
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+}
+.timeline-box:nth-child(2n){
+    position: relative;
+    left: 53%;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+}
+.designation{
+    width: 100%;
+    height: 40%;
+    text-align: right;
+}
+.designation h1{
+    color: blue;
+    font-size: 1.2rem;
+    
+}
+.designation h3{
+    color: orange;
+    font-size: 1rem;
+    line-height: 1px;
+}
+.designation p{
+    text-align: right;
+    color: grey;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1px;
+}
+.designation::after{
+    left: 0.1vw;
+    top: 0.1vw;
+    content: '';
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-size: contain;
+}
+.timeline-box>p{
+    color: grey;
+    font-size: 0.6rem;
+    text-align: justify;
+    font-weight: 500;
+}
+/*Education*/
+.degree{
+    width: 100%;
+    height: 40%;
+    text-align: right;
+}
+.degree h1{
+    color: blue;
+    font-size: 1.2rem;
+    
+}
+.degree h3{
+    color: orange;
+    font-size: 1rem;
+    line-height: 1px;
+}
+.degree p{
+    text-align: right;
+    color: grey;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1px;
+}
+.degree::after{
+    left: 0.1vw;
+    top: 0.1vw;
+    content: '';
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png);
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    background-size: contain;
+}
